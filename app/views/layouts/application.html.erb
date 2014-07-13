@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AwesomeEvents</title>
+    <title>岡山大学珈琲同好会イベントページ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to 'AwesomeEvents', root_path, class: 'navbar-brand' %>
+          <%= link_to '岡山大学珈琲同好会イベントページ', root_path, class: 'navbar-brand' %>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -32,7 +32,10 @@
           </ul>
         </div>
       </div>
-    </header>
+      </header>
+      <center><p>
+        <%= image_tag("cafe_back.jpg",:width=>"960") %>
+      </center></p>
     <div class="container">
       <% if flash[:notice] %>
         <div class="alert alert-success">
