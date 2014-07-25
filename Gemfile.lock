@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GIT
   remote: git://github.com/rspec/rspec-core.git
   revision: a8cf7bf3e0349e4f6d3ab34f4aaef93a3209db6f
@@ -39,6 +40,8 @@ GIT
   specs:
     rspec-support (3.0.0.beta2)
 
+=======
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,6 +73,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+<<<<<<< HEAD
     capistrano (3.1.0)
       i18n
       rake (>= 10.0.0)
@@ -93,6 +97,8 @@ GEM
       json (>= 1.7)
       mime-types (>= 1.16)
     cliver (0.3.2)
+=======
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -100,6 +106,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+<<<<<<< HEAD
     database_cleaner (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
@@ -123,10 +130,26 @@ GEM
       kaminari (>= 0.13.0)
       rails
     kgio (2.9.2)
+=======
+    erubis (2.7.0)
+    execjs (2.2.1)
+    hashie (2.1.2)
+    hike (1.2.3)
+    i18n (0.6.9)
+    jbuilder (2.1.1)
+      activesupport (>= 3.0.0, < 5)
+      multi_json (~> 1.2)
+    jquery-rails (3.1.1)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.8.1)
+    libv8 (3.16.14.3)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+<<<<<<< HEAD
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
     mini_portile (0.6.0)
@@ -136,6 +159,10 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
       mini_portile (= 0.6.0)
+=======
+    minitest (5.3.5)
+    multi_json (1.10.1)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     oauth (0.4.7)
     omniauth (1.2.1)
       hashie (>= 1.2, < 3)
@@ -146,6 +173,7 @@ GEM
     omniauth-twitter (1.0.1)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
+<<<<<<< HEAD
     poltergeist (1.5.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -154,6 +182,10 @@ GEM
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
+=======
+    pg (0.15.1)
+    polyglot (0.3.5)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -167,11 +199,20 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.1)
       sprockets-rails (~> 2.0)
+<<<<<<< HEAD
+=======
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     railties (4.1.1)
       actionpack (= 4.1.1)
       activesupport (= 4.1.1)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+<<<<<<< HEAD
     raindrops (0.13.0)
     rake (10.3.2)
     ransack (1.2.3)
@@ -180,14 +221,27 @@ GEM
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.0.0)
+=======
+    rake (10.3.2)
+    rdefs (0.0.2)
+    rdoc (4.1.1)
+      json (~> 1.4)
+    ref (1.0.5)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+<<<<<<< HEAD
     shoulda-matchers (2.6.1)
       activesupport (>= 3.0.0)
+=======
+    sdoc (0.4.0)
+      json (~> 1.8)
+      rdoc (~> 4.0, < 5.0)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -199,6 +253,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     sqlite3 (1.3.9)
+<<<<<<< HEAD
     sshkit (1.4.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -210,11 +265,20 @@ GEM
     thread_safe (0.3.3)
     tilt (1.4.1)
     tins (1.3.0)
+=======
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
+    thor (0.19.1)
+    thread_safe (0.3.4)
+    tilt (1.4.1)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
+<<<<<<< HEAD
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
     uglifier (2.5.0)
@@ -226,11 +290,19 @@ GEM
       raindrops (~> 0.7)
     websocket-driver (0.3.3)
     xpath (2.0.0)
+=======
+    tzinfo (1.2.1)
+      thread_safe (~> 0.1)
+    uglifier (2.5.1)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   capistrano (= 3.1.0)
   capistrano-bundler
   capistrano-rails
@@ -261,3 +333,21 @@ DEPENDENCIES
   turbolinks (~> 2.2.2)
   uglifier (~> 2.5.0)
   unicorn
+=======
+  coffee-rails (~> 4.0.0)
+  jbuilder (~> 2.0)
+  jquery-rails
+  omniauth (~> 1.2.1)
+  omniauth-twitter (~> 1.0.1)
+  pg (= 0.15.1)
+  rails (= 4.1.1)
+  rails_12factor (= 0.0.2)
+  rdefs
+  sass-rails (~> 4.0.3)
+  sdoc (~> 0.4.0)
+  spring
+  sqlite3
+  therubyracer
+  turbolinks
+  uglifier (>= 1.3.0)
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d

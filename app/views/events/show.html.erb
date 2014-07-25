@@ -3,6 +3,7 @@
     <%= @event.name %>
   </h1>
 </div>
+<<<<<<< HEAD
 <div class="row">
   <div class="col-md-8">
     <% if @event.event_image? %>
@@ -108,3 +109,45 @@
     </div>
   </div>
 </div>
+=======
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    主催者
+  </div>
+  <div class="panel-body">
+    <%= link_to("https://twitter.com/#{@event.owner.nickname}") do %>
+      <%= image_tag @event.owner.image_url %>
+      <%= "@#{@event.owner.nickname}" %>
+    <% end %>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    開催時間
+  </div>
+  <div class="panel-body">
+    <%= @event.start_time.strftime('%Y/%m/%d %H:%M') %> - <%= @event.end_time.strftime('%Y/%m/%d %H:%M') %>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    開催場所
+  </div>
+  <div class="panel-body">
+    <%= @event.place %>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    イベント内容
+  </div>
+  <div class="panel-body">
+    <%= @event.content %>
+  </div>
+</div>
+
+
+
+
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d

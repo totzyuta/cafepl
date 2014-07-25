@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% now = Time.zone.now %>
 <div class="page-header">
   <h1>イベント一覧</h1>
@@ -15,6 +16,11 @@
   </div>
   <%= f.submit '検索', class: 'btn btn-default' %>
 <% end %>
+=======
+<div class="page-header">
+  <h1>イベント一覧</h1>
+</div>
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 <div class="list-group">
   <% @events.each do |event| %>
     <%= link_to(event, class: 'list-group-item') do %>
@@ -22,9 +28,16 @@
         <%= event.name %>
       </h4>
       <p class="list-group-item-text">
+<<<<<<< HEAD
         <%= event.start_time.strftime('%Y/%m/%d %H:%M') %> - <%= event.end_time.strftime('%Y/%m/%d %H:%M') %>
       </p>
     <% end %>
   <% end %>
   <%= paginate @events %>
+=======
+      <%= event.start_time.strftime('%Y/%m/%d %H/%M') %> - <%= event.end_time.strftime('%Y/%m/%d %H/%M') %>
+      </p>
+    <% end %>
+  <% end %>
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 </div>

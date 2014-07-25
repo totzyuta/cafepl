@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131117134312) do
 
   create_table "events", force: true do |t|
@@ -23,10 +24,24 @@ ActiveRecord::Schema.define(version: 20131117134312) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "event_image"
+=======
+ActiveRecord::Schema.define(version: 20140707065054) do
+
+  create_table "events", force: true do |t|
+    t.integer  "owner_id"
+    t.string   "name",       null: false
+    t.string   "place",      null: false
+    t.datetime "start_time", null: false
+    t.datetime "end_time",   null: false
+    t.text     "content",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
   end
 
   add_index "events", ["owner_id"], name: "index_events_on_owner_id"
 
+<<<<<<< HEAD
   create_table "tickets", force: true do |t|
     t.integer  "user_id"
     t.integer  "event_id",   null: false
@@ -38,6 +53,8 @@ ActiveRecord::Schema.define(version: 20131117134312) do
   add_index "tickets", ["event_id", "user_id"], name: "index_tickets_on_event_id_and_user_id", unique: true
   add_index "tickets", ["user_id", "event_id"], name: "index_tickets_on_user_id_and_event_id", unique: true
 
+=======
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
   create_table "users", force: true do |t|
     t.string   "provider",   null: false
     t.string   "uid",        null: false

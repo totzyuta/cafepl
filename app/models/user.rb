@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 class User < ActiveRecord::Base
   before_destroy :check_all_events_finished
@@ -5,6 +6,10 @@ class User < ActiveRecord::Base
   has_many :created_events, class_name: 'Event', foreign_key: :owner_id, dependent: :nullify
   has_many :tickets, dependent: :nullify
   has_many :participating_events, through: :tickets, source: :event
+=======
+class User < ActiveRecord::Base
+  has_many :created_events, class_name: 'Event', foreign_key: :owner_id
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 
   def self.find_or_create_from_auth_hash(auth_hash)
     provider = auth_hash[:provider]
@@ -17,6 +22,7 @@ class User < ActiveRecord::Base
       user.image_url = image_url
     end
   end
+<<<<<<< HEAD
 
   private
 
@@ -31,4 +37,6 @@ class User < ActiveRecord::Base
     end
     errors.blank?
   end
+=======
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 end

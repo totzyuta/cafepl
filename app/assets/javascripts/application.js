@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require bootstrap.min
 //= require_tree .
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d

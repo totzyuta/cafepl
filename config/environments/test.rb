@@ -14,7 +14,11 @@ Rails.application.configure do
 
   # Configure static asset server for tests with Cache-Control for performance.
   config.serve_static_assets  = true
+<<<<<<< HEAD
   config.static_cache_control = "public, max-age=3600"
+=======
+  config.static_cache_control = 'public, max-age=3600'
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
@@ -33,4 +37,10 @@ Rails.application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+<<<<<<< HEAD
+=======
+
+  # Raises error for missing translations
+  # config.action_view.raise_on_missing_translations = true
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
 end

@@ -1,6 +1,7 @@
 <% now = Time.zone.now %>
 
 <div class="page-header">
+<<<<<<< HEAD
   <h1>イベント作成</h1>
 </div>
 
@@ -11,6 +12,18 @@
       <% @event.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
+=======
+  <h1>Create Event</h1>
+</div>
+
+<%= form_for(@event, class: 'form-horizontal', role: 'form') do |f| %>
+  <% if @event.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @event.errors.full_message.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
       </ul>
     </div>
   <% end %>
@@ -24,6 +37,7 @@
     <%= f.text_field :place, class: 'form-control' %>
   </div>
   <div class="form-group">
+<<<<<<< HEAD
     <% if @event.event_image? %>
       <div class="thumbnail">
         <%= image_tag @event.event_image.url %>
@@ -33,6 +47,8 @@
     <%= f.hidden_field :event_image_cache %>
   </div>
   <div class="form-group">
+=======
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
     <%= f.label :start_time %>
     <div>
       <%= f.datetime_select :start_time, start_year: now.year, end_year: now.year + 1 %>
@@ -46,9 +62,17 @@
   </div>
   <div class="form-group">
     <%= f.label :content %>
+<<<<<<< HEAD
     <%= f.text_area :content, class: 'form-control', row: 10 %>
   </div>
 
   <%= f.submit '作成', class: 'btn btn-default', data: { disable_with: '作成中…' } %>
 <% end %>
 
+=======
+    <%= f.text_area :content, class: 'form-control', row: 10%>
+  </div>
+  <%= f.submit 'Create', class: 'btn btn-default', data: {disable_with: 'Creating...' } %>
+<% end %>
+    
+>>>>>>> 2ab2344959793e0755899109882cf6ce4bba394d
